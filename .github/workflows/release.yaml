@@ -7,6 +7,9 @@ on:
 jobs:
   goreleaser:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     env:
       flags: ""
     steps:
